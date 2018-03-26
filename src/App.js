@@ -76,7 +76,6 @@ class App extends Component {
   }
 
   navigateForward() {
-    console.log(this.state.current);
     this.state.current < this.state.total ? this.setState({current: this.state.current + 1, direction: 'right'}) : this.finish();
   }
 
@@ -85,11 +84,9 @@ class App extends Component {
     if (e[1] === 0 && !this.swiped) {
       // check direction
       if (e[0] > 0) {
-        console.log('left');
         this.navigateBack();
         this.swiped = true;
       } else if (e[0] < 0) {
-        console.log('right');
         this.navigateForward();
         this.swiped = true;
       }
