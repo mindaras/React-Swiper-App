@@ -62,7 +62,7 @@ class App extends Component {
     // check if answer already exists
     if (this.state.answeredQuestions.some(question => question.id === id)) {
       this.setState({answeredQuestions: this.state.answeredQuestions.filter(question => (
-        question.id === id ? question.answer = 'yes' : question
+        question.id === id ? question.answer = 'no' : question
       ))});
     } else {
       this.setState({answeredQuestions: [...this.state.answeredQuestions, {id, text: this.state.questions[this.state.current - 1].text, answer: 'no'}]});
