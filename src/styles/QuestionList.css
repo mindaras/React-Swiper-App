@@ -1,0 +1,43 @@
+.question-list
+{
+  padding: 0 20px;
+  margin-top: 20px;
+  text-align: center;
+  opacity: 0;
+}
+.question-list.right
+{
+  animation: fadeInRight ease .6s forwards;
+}
+.question-list.left
+{
+  animation: fadeInLeft ease .6s forwards;
+}
+
+@keyframes fadeInRight
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

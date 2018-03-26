@@ -1,0 +1,90 @@
+.finished
+{
+  padding: 0 20px;
+}
+.finished__title
+{
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeFinish ease .3s forwards;
+}
+.finished__answers-title
+{
+  margin-bottom: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeFinish ease .3s .1s forwards;
+}
+.finished__answers-list
+{
+  line-height: 1.2;
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeFinish ease .3s .2s forwards;
+}
+strong
+{
+  font-weight: 700;
+  text-transform: capitalize;
+  display: block;
+  margin-top: 5px;
+}
+.finished li
+{
+  margin-bottom: 5px;
+}
+.finished .finished-cta
+{
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 10px 0;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  transition: ease .3s;
+  opacity: 0;
+  transform: translateY(15px);
+  cursor: pointer;
+  animation: fadeFinish ease .3s .3s forwards;
+}
+.finished-cta:hover
+{
+  background-color: #fff;
+  color: #000;
+}
+
+@keyframes fadeFinish
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .finished__answers-list
+  {
+    font-size: 16px;
+  }
+  .finished .finished-cta
+  {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+}
