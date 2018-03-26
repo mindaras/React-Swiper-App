@@ -11,7 +11,7 @@ const Finished = ({answeredQuestions}) => {
       <ul className="finished__answers-list">
         {answerList}
       </ul>
-      <a href="/" className="finished-cta">Get your prize</a> 
+      <a href="./" className="finished-cta">Get your prize</a> 
     </div>
   );
 };
