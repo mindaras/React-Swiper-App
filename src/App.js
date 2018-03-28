@@ -43,6 +43,9 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({total: this.state.questions.length, current: 1});
+
+    // disabling scrolling
+    document.ontouchmove = (e) => e.preventDefault();
   }
 
   handleYes(id) {
